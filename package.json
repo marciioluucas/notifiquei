@@ -1,0 +1,19 @@
+{
+  "name": "notifiquei",
+  "version": "1.0.0",
+  "description": "Pacote de notificaçoes em geral",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marcio Lucas R Oliveira <marciioluucas@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "sequelize-cli": "^5.5.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "sequelize": "^5.21.3",
+    "sqlite3": "^4.1.1"
+  }
+}
