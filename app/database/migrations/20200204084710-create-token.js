@@ -1,25 +1,15 @@
 'use strict';
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('Apps', {
+    return queryInterface.createTable('Tokens', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      name: {
+      value: {
         type: Sequelize.STRING
-      },
-      description: {
-        type: Sequelize.STRING
-      },
-      url: {
-        type: Sequelize.STRING
-      },
-      logo: {
-        type: Sequelize.STRING,
-        allowNull: false,
       },
       createdAt: {
         allowNull: false,
@@ -32,6 +22,6 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('Apps');
+    return queryInterface.dropTable('Tokens');
   }
 };

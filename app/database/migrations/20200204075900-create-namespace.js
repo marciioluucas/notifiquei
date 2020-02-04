@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('Apps', {
+    return queryInterface.createTable('Namespaces', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -14,13 +14,6 @@ module.exports = {
       description: {
         type: Sequelize.STRING
       },
-      url: {
-        type: Sequelize.STRING
-      },
-      logo: {
-        type: Sequelize.STRING,
-        allowNull: false,
-      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
@@ -32,6 +25,6 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('Apps');
+    return queryInterface.dropTable('Namespaces');
   }
 };

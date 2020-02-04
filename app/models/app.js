@@ -5,8 +5,10 @@ module.exports = (sequelize, DataTypes) => {
     description: DataTypes.STRING,
     logo: DataTypes.STRING
   }, {});
-  App.associate = function(models) {
-    // associations can be defined here
+  App.associate = function (models) {
+    App.hasMany(models.Namespace);
+    App.belongsTo(models.User);
+    App.hasOne(models.Token);
   };
   return App;
 };
