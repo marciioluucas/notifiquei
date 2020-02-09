@@ -7,5 +7,6 @@ module.exports = (sequelize, DataTypes) => {
     Room.hasMany(models.Device)
     Room.belongsTo(models.Namespace)
   };
+
   return Room;
 };

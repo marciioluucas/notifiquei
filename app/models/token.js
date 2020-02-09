@@ -4,7 +4,7 @@ module.exports = (sequelize, DataTypes) => {
     value: DataTypes.STRING
   }, {});
   Token.associate = function (models) {
-    Token.hasOne(models.App)
+    Token.belongsTo(models.App)
   };
   return Token;
 };
