@@ -13,6 +13,11 @@ module.exports = {
         allowNull: false,
         type: DataTypes.STRING,
       },
+      readed: {
+        allowNull: false,
+        type: DataTypes.BOOLEAN,
+        default: false,
+      },
       callback: {
         allowNull: true,
         type: DataTypes.STRING,

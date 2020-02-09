@@ -4,8 +4,8 @@ module.exports = (sequelize, DataTypes) => {
     text: DataTypes.STRING,
     callback: DataTypes.STRING
   }, {});
-  Message.associate = function(models) {
-    // associations can be defined here
+  Message.associate = function (models) {
+    models.HasMany(models.Device)
   };
   return Message;
 };

@@ -4,8 +4,9 @@ module.exports = (sequelize, DataTypes) => {
     platform: DataTypes.STRING,
     alias: DataTypes.STRING
   }, {});
-  Device.associate = function(models) {
-    // associations can be defined here
+  Device.associate = function (models) {
+    Device.hasMany(models.Device)
+
   };
   return Device;
 };
